@@ -27,7 +27,7 @@
                 <label for="terminus_b"><?php echo $singleLigne['terminus_b']?></label>
                 <input type="text" name="terminus_b" value="<?php echo $singleLigne['terminus_b']?>" class="form-control" id="formGroupExampleInput" required>
             </div>
-            <input type="hidden" name="product_id" value="<?php echo $singleLigne['ligne_id']; ?>">
+            <input type="hidden" name="ligne_id" value="<?php echo $singleLigne['ligne_id']; ?>">
             <button type="submit" class="btn btn-warning">Modifier la ligne</button>
         </form>
 </body>

@@ -17,10 +17,10 @@
         $reqUpdate->bindValue(':ligne_name', $name, PDO::PARAM_STR);
         $reqUpdate->bindValue(':terminus_a', $terminus_a, PDO::PARAM_STR);
         $reqUpdate->bindValue(':terminus_b', $terminus_b, PDO::PARAM_STR);
-        $reqUpdate->bindValue(':ligne_id', $ligne_id, PDO::PARAM_INT);
-    
+        $reqUpdate->bindValue(':ligne_id', $ligne_id, PDO::PARAM_STR);
         $reqUpdate->execute();
-        header("Location:edit-lignes.php?success=editSuccess&id={$ligne_id}");
+        $update = $db->lastInsertId();
+        header("Location:edit-lignes.php?success=editSuccess&id={$_POST['ligne_id']}");
         exit();
     } catch (PDOException $e) {
         echo 'Erreur :'.$e->getMessage();
