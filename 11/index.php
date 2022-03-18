@@ -1,6 +1,6 @@
 <?php
-    require '../7/_viewCorp.php';
-    require '../11/_viewLinesFromCorp.php';
+    require '../7/_head.php';
+    require '_sqlfetchSelect.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +22,17 @@
         permet de créer un filtre. (Vous pourrez créer arbitrairement le filtrage que vous voulez).</p>
     <small>Utilisez un système de bloc try/catch afin de réaliser vos opérations SQL.Sécurisez le tout avec des requêtes
         préparées.N'oubliez pas l'instruction WHERE pour sélectionner plus précisément</small>
+
+    <div class="container">
+        <select name="lignes" class="form-select m-3">
+            <?php foreach ($lignes as $ligne) : ?>
+            <option value="<?php echo $ligne['ligne_id'];?>">
+                <?php echo $ligne['ligne_name']; ?>
+            </option>
+            <?php endforeach; ?>
+        </select>
+        <a href="../8/lignes.php" class="btn btn-warning">Voir les lignes</a>
+    </div>
 </body>
 
 </html>

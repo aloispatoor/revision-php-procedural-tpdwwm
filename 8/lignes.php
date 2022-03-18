@@ -31,7 +31,7 @@
                 <td>
                     <form action="../10/delete-ligne.php" method="post">
                         <input type="hidden" name="ligne_id" value="<?php echo $ligne['ligne_id']; ?>">
-                        <input type="submit" class="btn btn-danger" value="Delete product">
+                        <input type="submit" class="btn btn-danger" value="Supprimer la ligne">
                     </form>
                 </td>
             </tr>
