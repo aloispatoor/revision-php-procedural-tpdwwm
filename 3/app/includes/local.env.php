@@ -1,6 +1,6 @@
 <?php
 
     define('HOST', 'localhost');
-    define('DBNAME', 'cars');
+    define('DBNAME', 'users');
     define('USER', 'root');
     define('PASSWORD', '');
