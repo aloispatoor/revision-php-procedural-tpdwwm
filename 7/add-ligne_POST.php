@@ -7,8 +7,8 @@ if(in_array('', $_POST)){
     exit();
 }else{
     $name = trim(htmlspecialchars($_POST['name']));
-    $terminus_a = trim(htmlspecialchars($_POST['name']));
-    $terminus_b = trim(htmlspecialchars($_POST['name']));
+    $terminus_a = trim(htmlspecialchars($_POST['terminus_a']));
+    $terminus_b = trim(htmlspecialchars($_POST['terminus_b']));
 }
 
 try{

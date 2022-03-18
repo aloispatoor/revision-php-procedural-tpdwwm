@@ -1,16 +1,6 @@
 <?php
-    require '../8/_viewLines.php';
+    require '../7/_head.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 8</title>
-</head>
 
 <body>
     <h1>Exercice 8 : Affichage des données de la BDD</h1>
@@ -22,6 +12,7 @@
         d'avoir un tableau doublé.</small>
     <p><b>Bonus : ajoutez un champ de recherche pour filtrer les résultats par leur nom (A l'aide de l'instruction LIKE
             %recherche% dans une requête SQL)</b></p>
+    <a href="lignes.php" class="btn btn-warning">Consulter les lignes</a>
 </body>
 
 </html>
