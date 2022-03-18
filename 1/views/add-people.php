@@ -1,7 +1,7 @@
 <?php
     require '_head.php';
     require '../app/_sqlfetchPeople.php';
-    require '../app/_alerts.php';
+    require '../../5/_alerts.php';
 ?>
     <div class="container m-6">
         <h1>Tableau des personnes intégrée à la base de données</h1>
