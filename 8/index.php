@@ -1,5 +1,6 @@
 <?php
     require '../7/_head.php';
+    require '../4/_navbar.php';
 ?>
 
 <body>

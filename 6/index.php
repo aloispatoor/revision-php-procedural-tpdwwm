@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <?php require '../4/_navbar.php'; ?>
     <h1>Exercice 6 : Connexion à la BDD</h1>
     <p>A partir de vos connaissances, établissez une connexion à une base de données MySQL. VOUS N'UTILISEREZ PAS DE
         CONSTANTES DANS CETTE METHODE, simplement les infos de connexion. Le fichier de connexion ne contiendra que du

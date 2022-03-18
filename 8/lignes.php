@@ -1,5 +1,6 @@
 <?php
     require '../7/_head.php';
+    require '../4/_navbar.php';
     require '_sqlfetchLignes.php';
     require '../5/_alerts.php'
 ?>

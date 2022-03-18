@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 10</title>
-
-
-</head>
+<?php
+    require '../7/_head.php';
+    require '../4/_navbar.php';
+?>
 
 <body>
     <h1>Exercice 10 : Suppression simple de la BDD</h1>
