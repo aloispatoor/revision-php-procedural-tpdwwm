@@ -7,8 +7,8 @@
     <a href="../6/index.php" class="btn btn-outline-primary" type="button">Exercice 6 : Base de données Transports</a>
     <a href="../7/index.php" class="btn btn-outline-primary" type="button">Exercice 7 : Ajout de Lignes</a>
     <a href="../8/index.php" class="btn btn-outline-primary" type="button">Exercice 8 : Tableau des Lignes</a>
-    <a href="../9/views/home.php" class="btn btn-outline-primary" type="button">Exercice 9</a>
-    <a href="../10/views/home.php" class="btn btn-outline-primary" type="button">Exercice 10</a>
-    <a href="../11/views/home.php" class="btn btn-outline-primary" type="button">Exercice 11</a>
+    <a href="../9/index.php" class="btn btn-outline-primary" type="button">Exercice 9 : Édition des Lignes</a>
+    <a href="../10/index.php" class="btn btn-outline-primary" type="button">Exercice 10 : Suppression de Lignes</a>
+    <a href="../11/index.php" class="btn btn-outline-primary" type="button">Exercice 11 : Affichage selon critères</a>
   </form>
 </nav>

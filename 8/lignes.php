@@ -1,10 +1,18 @@
 <?php
     require '../7/_head.php';
     require '_sqlfetchLignes.php';
+    require '../5/_alerts.php'
 ?>
 <body>
     <div class="container-fluid m-4">
         <h1>Les lignes</h1>
+        <div class="card-header pb-0 text-left bg-transparent">
+            <?php if($alert) : ?>
+                <div class="alert alert-<?php echo $type; ?>" role="alert">
+                    <?php echo $message; ?>
+                </div>
+            <?php endif; ?>
+        </div>
         <table class="table">
         <thead>
             <tr>
@@ -19,8 +27,13 @@
                 <th><?php echo $ligne['ligne_name'];?></th>
                 <td><?php echo $ligne['terminus_a'];?></td>
                 <td><?php echo $ligne['terminus_b'];?></td>
-                <td><a class="btn btn-dark" href="">Modifier</a></td>
-                <td><a class="btn btn-danger" href="">Supprimer</a></td>
+                <td><a class="btn btn-dark" href="../9/edit-lignes.php?id=<?php echo $ligne['ligne_id']; ?>">Modifier</a></td>
+                <td>
+                    <form action="../10/delete-ligne.php" method="post">
+                        <input type="hidden" name="ligne_id" value="<?php echo $ligne['ligne_id']; ?>">
+                        <input type="submit" class="btn btn-danger" value="Delete product">
+                    </form>
+                </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
