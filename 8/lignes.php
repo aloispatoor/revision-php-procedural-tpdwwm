@@ -5,7 +5,7 @@
     require '../5/_alerts.php'
 ?>
 <body>
-    <div class="container-fluid m-4">
+    <div class="container m-3">
         <h1>Les lignes</h1>
         <div class="card-header pb-0 text-left bg-transparent">
             <?php if($alert) : ?>
