@@ -42,11 +42,11 @@
     <form action="../app/add-people_post.php" method="POST">
         <div class="input-group mb-3">
             <label class="input-group-text" for="name">Nom*</label>
-            <input class="form-control form-control-lg" type="text" name="name" placeholder="" required>
+            <input class="form-control form-control-lg" type="text" name="name" required>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text" for="surname">Prénom*</label>
-            <input class="form-control form-control-lg" type="text" name="surname" placeholder="" required>
+            <input class="form-control form-control-lg" type="text" name="surname" required>
         </div>
         <div class="col-6 mb-3">
             <label class="input-group-text" for="gender">Genre</label>
@@ -55,22 +55,22 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="gender" value="<?php echo $gender['gender_id'];?>" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
-                    <?php echo $gender['gender_name'];?>
+            <?php echo $gender['gender_name'];?>
                 </label>
             </div>
             <?php endforeach;?>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text" for="address">Adresse</label>
-            <input class="form-control form-control-lg" type="text" name="address" placeholder="">
+            <input class="form-control form-control-lg" type="text" name="address" required>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text" for="city">Ville</label>
-            <input class="form-control form-control-lg" type="text" name="city" placeholder="">
+            <input class="form-control form-control-lg" type="text" name="city" required>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text" for="postal-code">Code Postal</label>
-            <input class="form-control form-control-lg" type="text" name="postalcode" placeholder="">
+            <input class="form-control form-control-lg" type="text" name="postalcode" required>
         </div>
         <button type="submit" class="btn btn-primary">Ajouter</button>
     </form>

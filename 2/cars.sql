@@ -8,6 +8,6 @@ CREATE TABLE vehicules (
     modele VARCHAR (255) NOT NULL,
     color VARCHAR (255) NOT NULL,
     km FLOAT NOT NULL,
-    release_date DATE TIME NOT NULL,
+    release_date DATETIME NOT NULL,
     price FLOAT NOT NULL
 );

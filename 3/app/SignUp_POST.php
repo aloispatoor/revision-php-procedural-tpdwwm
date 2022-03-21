@@ -22,7 +22,7 @@
         exit();
     }
 
-    if (strlen($password) < 3 || strlen($password) > 100) {
+    if (strlen($password) <= 6 || strlen($password) > 100) {
         header('Location:../views/home.php?error=invalidPassword');
         exit();
     }

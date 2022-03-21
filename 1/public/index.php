@@ -8,5 +8,4 @@
     define('VIEWS_PATH', $root.'views'.DIRECTORY_SEPARATOR);
 
 
-    require APP_PATH . "App.php";
     require INCLUDES_PATH . "config.php";
